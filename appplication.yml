@@ -1,14 +1,13 @@
 spring:
-  profile:
-     active:
-     - dev
+  profiles:
+    active: dev
 ---
 spring:
-  profile: dev #开发环境
-  application:
+  profiles: dev
+    application:
       name: microsevercloud-cofig-ldg-dev
 ---
 spring:
-  profile: dev #测试环境
-  application:
+  profiles: test
+    application:
       name: microsevercloud-cofig-ldg-test
